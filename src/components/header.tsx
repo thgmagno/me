@@ -9,12 +9,12 @@ export default function Header() {
           src={Me.imageURL}
           width={80}
           height={80}
-          alt={`Foto do ${Me.nome}`}
-          className="rounded-full border-2 border-white"
+          alt={`Foto do ${Me.name}`}
+          className="rounded-full border-2 border-white/20"
         />
       </div>
       <div className="flex-1">
-        <h1 className="text-lg font-medium">{Me.nome}</h1>
+        <h1 className="text-lg font-medium">{Me.name}</h1>
         <p className="text-sm">{Me.bio}</p>
       </div>
     </header>

@@ -26,7 +26,7 @@ export default function Projects() {
               <h2 className="mb-2 truncate text-center text-lg font-medium">
                 {project.title}
               </h2>
-              <p className="flex-1 text-justify text-sm">
+              <p className="flex-1 text-center text-sm md:text-justify">
                 {project.description}
               </p>
             </div>

@@ -1,7 +1,7 @@
 import { FaGithub, FaInstagram, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 
 export const Me = {
-  nome: 'Thiago Magno',
+  name: 'Thiago Magno',
   bio: 'Programador e Desenvolvedor Web',
   imageURL: '/image/img_profile_2.jpeg',
   socialMedia: [
@@ -26,17 +26,17 @@ export const Me = {
     {
       title: 'Sobre mim',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptatibus laudantium pariatur minus, quia nobis sed obcaecati repudiandae at, earum non asperiores! Quos cum nulla dolor, recusandae ea aperiam eius?',
+        'E aí, pessoal! Tranquilo? Sou o Thiago Magno, tô na casa dos 20 e poucos anos e tô morando em Palhoça, SC, um lugarzinho massa demais! Comecei nessa parada de informática com um curso técnico e tô curtindo a brincadeira. Curto desafios tecnológicos e sou apaixonado pelo minimalismo - menos é mais, sempre! Na área profissional, busco eficiência e estilo. Fora isso, adoro caminhar e ouvir música. Bora trocar uma ideia sobre tecnologia?',
     },
     {
       title: 'Habilidades não técnicas',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptatibus laudantium pariatur minus, quia nobis sed obcaecati repudiandae at, earum non asperiores! Quos cum nulla dolor, recusandae ea aperiam eius?',
+        'No trampo, sou daqueles que leva a sério: horários, prazos, tudo no esquema. Curto seguir padrões, mantendo a qualidade do trabalho. Gosto de deixar tudo organizado.',
     },
     {
       title: 'Habilidades técnicas',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptatibus laudantium pariatur minus, quia nobis sed obcaecati repudiandae at, earum non asperiores! Quos cum nulla dolor, recusandae ea aperiam eius?',
+        'Agora, tecnicamente falando, tô na área de JavaScript e TypeScript, mandando bem em React, Next.js, Node.js, Nest.js, e botando estilo com Tailwind CSS. Tudo isso faz parte da minha pegada de criar soluções modernas e eficientes. Se precisar de alguém que não deixa nada pra depois e manda bem nos códigos, tamo junto!',
     },
   ],
   projects: [
