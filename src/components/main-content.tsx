@@ -8,11 +8,11 @@ export default function MainContent() {
     <div className="mb-5 flex w-full flex-col rounded-xl border-2 border-white/20 bg-neutral-950/40 px-4">
       {Me.mainContent.map((content, index) => (
         <Accordion
+          key={index}
           variant="bordered"
           className="m-0 border-none p-0 text-justify text-white"
         >
           <AccordionItem
-            key={index}
             aria-label={content.title}
             title={<h2 className="text-white">{content.title}</h2>}
           >
