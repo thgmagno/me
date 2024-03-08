@@ -40,8 +40,16 @@ export const Me = {
     },
   ],
   projects: [
-    { link: '#', title: 'Projeto 01', description: '', imageURL: '' },
-    { link: '#', title: 'Projeto 02', description: '', imageURL: '' },
-    { link: '#', title: 'Projeto 03', description: '', imageURL: '' },
+    { link: '#', title: 'Conta Certa', description: '', imageURL: '' },
+    { link: '#', title: 'Aluno Connect', description: '', imageURL: '' },
+    { link: '#', title: 'Playlist', description: '', imageURL: '' },
+    { link: '#', title: 'Cartão de crédito', description: '', imageURL: '' },
+    { link: '#', title: 'Notificações', description: '', imageURL: '' },
+    {
+      link: '#',
+      title: 'Gerenciador de hábitos',
+      description: '',
+      imageURL: '',
+    },
   ],
 }

@@ -6,7 +6,7 @@ export default function Projects() {
   return (
     <section className="grid w-full grid-cols-2 rounded-xl border-2 border-white/20 bg-neutral-950/40 p-4 text-white">
       <h2 className="col-span-2 mb-2 text-xl">Projetos</h2>
-      {Me.projects.map((project, index) => (
+      {Me.projects.slice(0, 4).map((project, index) => (
         <Link href={project.link}>
           <Tooltip content={`Ir para ${project.title}`} color="foreground">
             <div
@@ -25,6 +25,14 @@ export default function Projects() {
           </Tooltip>
         </Link>
       ))}
+      <div className="col-span-2 mt-3 flex justify-center">
+        <Link
+          href="/projetos"
+          className="bg-transparent font-medium text-white hover:underline"
+        >
+          Visualizar todos os projetos
+        </Link>
+      </div>
     </section>
   )
 }
