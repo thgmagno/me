@@ -20,7 +20,10 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-br">
+    <html
+      lang="pt-br"
+      className="scrollbar-thin scrollbar-thumb-neutral-800 scrollbar-track-neutral-900"
+    >
       <body className={roboto.className}>
         <Providers>{children}</Providers>
       </body>

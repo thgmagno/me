@@ -11,6 +11,6 @@ const config: Config = {
   theme: {
     extend: {},
   },
-  plugins: [nextui()],
+  plugins: [nextui(), require('tailwind-scrollbar')],
 }
 export default config
