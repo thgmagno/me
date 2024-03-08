@@ -26,7 +26,7 @@ export const Me = {
     {
       title: 'Sobre mim',
       description:
-        'E aí, pessoal! Tranquilo? Sou o Thiago Magno, tô na casa dos 20 e poucos anos e tô morando em Palhoça, SC, um lugarzinho massa demais! Comecei nessa parada de informática com um curso técnico e tô curtindo a brincadeira. Curto desafios tecnológicos e sou apaixonado pelo minimalismo - menos é mais, sempre! Na área profissional, busco eficiência e estilo. Fora isso, adoro caminhar e ouvir música. Bora trocar uma ideia sobre tecnologia?',
+        'E aí, pessoal! Tranquilo? Me chamo Thiago, tô na casa dos 20 e poucos anos e tô morando em Palhoça, SC, um lugarzinho massa demais! Comecei nessa parada de informática com um curso técnico e tô curtindo a brincadeira. Curto desafios tecnológicos e sou apaixonado pelo minimalismo - menos é mais, sempre! Na área profissional, busco eficiência e estilo. Fora isso, adoro caminhar e ouvir música. Bora trocar uma ideia sobre tecnologia?',
     },
     {
       title: 'Habilidades não técnicas',
