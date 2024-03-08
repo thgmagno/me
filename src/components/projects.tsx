@@ -1,25 +1,33 @@
 import { Me } from '@/lib/me'
 import { Tooltip } from '@nextui-org/react'
+import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Projects() {
   return (
-    <section className="grid w-full grid-cols-2 rounded-xl border-2 border-white/20 bg-neutral-950/40 p-4 text-white">
+    <section className="grid w-full grid-cols-2 gap-2.5 rounded-xl border-2 border-white/20 bg-neutral-950/40 p-4 text-white">
       <h2 className="col-span-2 mb-2 text-xl">Projetos</h2>
       {Me.projects.slice(0, 4).map((project, index) => (
-        <Link href={project.link}>
+        <Link href={project.link} target="_blank">
           <Tooltip content={`Ir para ${project.title}`} color="foreground">
             <div
               key={index}
-              className="m-2 rounded-xl border-2 p-2 text-center"
+              className="flex h-full flex-col rounded-xl border-2 border-white/20 p-2"
             >
-              <div className="mb-2 flex h-20 items-center justify-center rounded-lg bg-neutral-200">
-                <span className="text-neutral-950">Imagem</span>
+              <div className="mb-2">
+                <Image
+                  src={project.imageURL}
+                  alt={`Imagem do projeto ${project.title}`}
+                  className="h-full w-full rounded-xl object-cover"
+                  height={250}
+                  width={250}
+                />
               </div>
-              <h2 className="mb-2 text-lg font-medium">{project.title}</h2>
-              <p className="text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-                quasi odit ipsam error veniam iste temporibus.
+              <h2 className="mb-2 truncate text-center text-lg font-medium">
+                {project.title}
+              </h2>
+              <p className="flex-1 text-justify text-sm">
+                {project.description}
               </p>
             </div>
           </Tooltip>

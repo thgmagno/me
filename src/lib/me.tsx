@@ -40,16 +40,40 @@ export const Me = {
     },
   ],
   projects: [
-    { link: '#', title: 'Conta Certa', description: '', imageURL: '' },
-    { link: '#', title: 'Aluno Connect', description: '', imageURL: '' },
-    { link: '#', title: 'Playlist', description: '', imageURL: '' },
-    { link: '#', title: 'Cartão de crédito', description: '', imageURL: '' },
-    { link: '#', title: 'Notificações', description: '', imageURL: '' },
     {
-      link: '#',
-      title: 'Gerenciador de hábitos',
-      description: '',
-      imageURL: '',
+      link: 'https://aluno-connect.vercel.app/',
+      title: 'Aluno Connect',
+      description:
+        'O Aluno Connect é uma ferramenta para escolas que buscam uma gestão eficiente da frequência dos alunos. Com recursos avançados, níveis de perfil com permissões diferenciadas e notificações em tempo real.',
+      imageURL: '/image/aluno_connect.png',
+    },
+    {
+      link: 'https://drag-and-drop-framer-motion.vercel.app/',
+      title: 'Tune Flow',
+      description:
+        'Este aplicativo oferece uma experiência única de playlist, permitindo que você arraste e solte as músicas para criar a trilha sonora perfeita para cada momento.',
+      imageURL: '/image/tune_flow.png',
+    },
+    {
+      link: 'https://input-cartao-de-credito.vercel.app/',
+      title: 'Card Canvas',
+      description:
+        'Este aplicativo oferece uma abordagem envolvente para o preenchimento de informações de cartão de crédito, transformando um processo rotineiro em uma experiência visualmente impressionante.',
+      imageURL: '/image/card_canvas.png',
+    },
+    {
+      link: 'https://toast-notification-tailwind.vercel.app/',
+      title: 'Toast Messages',
+      description:
+        'Este projeto foi concebido para demonstrar a implementação de notificações toast, uma parte crucial da experiência do usuário em aplicativos modernos.',
+      imageURL: '/image/toast_messages.png',
+    },
+    {
+      link: 'https://gerenciador-habitos-next.vercel.app/',
+      title: 'Meta Diária',
+      description:
+        'Este aplicativo foi projetado para ajudar você a desenvolver e manter hábitos positivos, promovendo uma vida equilibrada e saudável.',
+      imageURL: '/image/meta_diaria.png',
     },
   ],
 }

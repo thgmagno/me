@@ -1,4 +1,6 @@
 import { Me } from '@/lib/me'
+import { Button } from '@nextui-org/react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { FaChevronLeft } from 'react-icons/fa'
 
@@ -11,15 +13,29 @@ export default function Projects() {
         </Link>
       </div>
       {Me.projects.map((project, index) => (
-        <div key={index} className="m-2 rounded-xl border-2 p-2 text-center">
-          <div className="mb-2 flex h-20 items-center justify-center rounded-lg bg-neutral-200">
-            <span className="text-neutral-950">Imagem</span>
+        <div
+          key={index}
+          className="m-2 rounded-xl border-2 border-white/20 bg-neutral-950/40 p-2 text-center text-white"
+        >
+          <div>
+            <Image
+              src={project.imageURL}
+              alt={`Imagem do projeto ${project.title}`}
+              className="h-full w-full rounded-xl object-cover"
+              height={500}
+              width={500}
+            />
           </div>
-          <h2 className="mb-2 text-lg font-medium">{project.title}</h2>
-          <p className="text-sm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi
-            odit ipsam error veniam iste temporibus.
-          </p>
+          <div className="mx-1.5 my-4 flex items-center justify-between">
+            <h2 className="truncate text-xl font-medium">{project.title}</h2>
+            <Button
+              variant="bordered"
+              className="border-white/20 text-white hover:bg-white hover:text-black"
+            >
+              <Link href={project.link}>Acessar o projeto</Link>
+            </Button>
+          </div>
+          <p className="text-justify">{project.description}</p>
         </div>
       ))}
     </main>
